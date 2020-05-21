@@ -1,0 +1,57 @@
+@import "variables.scss";
+
+////font style
+// font weight upload 400, 600, 700
+@mixin font-three-italic{
+    font-family: $font;
+    font-weight: 400;
+    font-style: italic;
+}
+@mixin font-three{
+    font-family: $font;
+    font-weight: 400;
+}
+@mixin font-two{
+    font-family: $font;
+    font-weight: 600;
+}
+@mixin font-one{
+    font-family: $font;
+    font-weight: 700;
+}
+//font main settings
+//Headings
+@mixin font-heading-main{
+    text-shadow: 0px 1px 0 rgba(0, 0, 0, 0.75);
+    font-size: 18px;
+    letter-spacing: normal;
+    color: #ffffff;
+    @include font-one;
+}
+//Subtitles
+@mixin font-subtitle-main{
+    text-shadow: 0px 1px 0 rgba(0, 0, 0, 0.75);
+    font-size: 14px;
+    color: #ffffff;
+    @include font-one;
+}
+//Text
+@mixin font-text-main{
+    text-shadow: 0px 1px 0 rgba(0, 0, 0, 0.75);
+    font-size: 12px;
+    color: #e4e4e4;
+
+    @include font-three;
+
+    margin-top: 10px;
+}
+//// animation hover
+@mixin animation-time{
+    transition: .2s;
+    transition-delay: .1s;
+}
+////content position style
+@mixin content-width-desktop{
+    margin: 0 auto;
+    max-width: 1000px;
+}
